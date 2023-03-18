@@ -52,6 +52,7 @@
     --clr-neutral-300:  hsl(208, 11%, 55%);
 
     --clr-primary-100: hsl(322, 100%, 66%);
+    --clr-primary-200: hsl(322, 100%, 80%);
 
     --space-primary: 2rem 4rem;
 
@@ -117,6 +118,10 @@ img {
 
 body{
     font-size: 18px;
+}
+
+a:hover{
+    background-color: var(--clr-primary-200);
 }
 
 
@@ -221,14 +226,18 @@ body{
 .build{
     text-align: center;
     position: relative;
-    bottom: -110px;
+    bottom: -50px;
     background-color: white;
-    padding: 2rem 2rem;
-    border-radius: 16px;
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    padding: 2.5rem 1rem;;
+    border-radius: 8px;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px, rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
 }
 
 .build h1{
+    font-size: 1.5rem;
     margin-bottom: 2rem;
 }
 
@@ -245,7 +254,7 @@ footer {
     padding-right: 5rem;
     display: flex;
     margin-top: 5rem;
-    margin-top: -105px;
+    margin-top: -10px;
 }
 
 .huddle-footer :nth-child(1),
@@ -337,6 +346,11 @@ ul li{
         flex-direction: column;
     }
 
+    #hero .community .text a{
+        padding:5px 22px;
+        font-size: 12px;
+    }
+
     #hero nav img{
         margin-left: -40px;
         width: 150px;
@@ -373,25 +387,22 @@ ul li{
         flex-direction: column;
         padding: 1rem;
     }
+
     .build{
-        margin-left: -2rem;
-        margin-right: -2rem;
+        bottom: -45px;
+        width: 89%;
     }
-
-    .build h1{
-        font-size: 16px;
-        margin-bottom: 1rem;
-        margin-left: -40px;
-        margin-right: -40px;
-        padding-left: 1rem;
-        padding-right: 1rem;
-    }
-
 
     .build a{
         padding:5px 22px;
         font-size: 12px;
     }
+
+    .build h1{
+        font-size: 14px;
+        margin-bottom: 1rem;
+    }
+
 
 
     footer{
